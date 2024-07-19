@@ -1,0 +1,161 @@
+/* General Styles */
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  background-color: #000; /* Background color fallback */
+}
+
+.name {
+  color: blanchedalmond;
+}
+.nav-wrapper .brand-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.sidenav a {
+  color: #fff;
+}
+
+/* Hero Section Styles */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("../img/esteros.jpg") no-repeat center center/cover;
+  background-color: rgba(0, 0, 0, 0.5); /* Background color fallback */
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 6em;
+  margin-bottom: 20px;
+}
+
+.hero h4 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero h5 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #ffcc00;
+  color: #000;
+  font-size: 1.5em;
+  padding: 1px 30px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #ff9c07;
+  color: #fff;
+}
+
+.gallery {
+  display: grid;
+  place-items: center; /* Centra horizontal y verticalmente */
+  height: 100vh;
+}
+
+ul.collection li.collection img {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+  height: auto; /* Ajusta la altura automáticamente según el ancho */
+  max-width: 300px; /* Define el ancho máximo deseado */
+  max-height: 200px; /* Define la altura máxima deseada */
+  margin-right: 20px; /* Espacio entre la imagen y el texto (opcional) */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+.datepicker-input,
+.timepicker-input,
+textarea {
+  color: black;
+}
+
+/* Cambia el color del texto del datepicker */
+.datepicker-date-display,
+.datepicker-day-button {
+  color: rgb(17, 1, 1);
+}
+
+.timepicker-display-column,
+.timepicker-span-hours,
+.text-primary {
+  color: rgb(17, 1, 1);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.content {
+    margin-top: 60px; /* altura del header */
+    padding: 20px;
+}
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+.gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.photo {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+}
+.photo img {
+    width: 100%;
+    display: block;
+}
+.caption {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+} */
